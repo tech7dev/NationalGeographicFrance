@@ -84,7 +84,7 @@ public class PlayListActivity extends AppCompatActivity {
                     titleBar = intent.getStringExtra(EXTRA_TITLEBAR);
                     initToolbar();
                     PLAYLIST_ID = intent.getStringExtra(EXTRA_PLAYLISTID); //parameter
-                    CHANNEL_GET_URL = "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=" + PLAYLIST_ID + "&maxResults=30&key=" + GOOGLE_YOUTUBE_API_KEY + "";
+                    CHANNEL_GET_URL = "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=" + PLAYLIST_ID + "&maxResults=150&key=" + GOOGLE_YOUTUBE_API_KEY + "";
 
                     rcvPlayVideos = (RecyclerView) findViewById(R.id.rcvPlayVideos);
                     initList(mListData);

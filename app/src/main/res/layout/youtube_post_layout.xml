@@ -15,6 +15,21 @@
             android:layout_height="match_parent"
             android:scaleType="centerCrop" />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/imagePlay"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:foregroundGravity="center"
+                android:scaleType="centerCrop"
+                android:background="@drawable/ic_play_white"/>
+        </LinearLayout>
+
+
+
         <TextView
             android:id="@+id/textViewDate"
             android:layout_width="wrap_content"

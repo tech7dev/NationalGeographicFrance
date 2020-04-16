@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
 
     private static String GOOGLE_YOUTUBE_API_KEY = "AIzaSyDyW7B--90khlyosHdfz9U6bF9giXn2SY8";//here you should use your api key for testing purpose you can use this api also
     private static String CHANNEL_ID = "UCT60XBtfRQzf5NKFGDNbfCw"; //here you should use your channel id for testing purpose you can use this api also
-    private static String CHANNLE_GET_URL = "https://www.googleapis.com/youtube/v3/search?part=snippet&order=date&channelId=" + CHANNEL_ID + "&maxResults=30&key=" + GOOGLE_YOUTUBE_API_KEY + "";
+    private static String CHANNEL_GET_URL = "https://www.googleapis.com/youtube/v3/search?part=snippet&order=date&channelId=" + CHANNEL_ID + "&maxResults=200&key=" + GOOGLE_YOUTUBE_API_KEY + "";
 
     private RecyclerView rcvChannelVideos = null;
     private VideoPostAdapter adapter = null;
@@ -132,8 +132,8 @@ public class MainActivity extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... params) {
             HttpClient httpClient = new DefaultHttpClient();
-            HttpGet httpGet = new HttpGet(CHANNLE_GET_URL);
-            Log.e("URL", CHANNLE_GET_URL);
+            HttpGet httpGet = new HttpGet(CHANNEL_GET_URL);
+            Log.e("URL", CHANNEL_GET_URL);
             try {
                 HttpResponse response = httpClient.execute(httpGet);
                 HttpEntity httpEntity = response.getEntity();

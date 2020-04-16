@@ -277,6 +277,9 @@ public class VideoShowActivity extends YouTubeBaseActivity implements YouTubePla
                     String thumbnail = jsonSnippet.getString("authorProfileImageUrl");
                     String comment = jsonSnippet.getString("textDisplay");
 
+                    title = title.replaceAll("&#39;","'");
+                    comment = comment.replaceAll("&#39;","'");
+
                     youtubeObject.setTitle(title);
                     youtubeObject.setComment(comment);
                     youtubeObject.setThumbnail(thumbnail);

@@ -8,49 +8,60 @@
         <item
             android:id="@+id/nav_okovango"
             android:title="OKOVANGO"
+            android:icon="@drawable/ic_play_circle"
             app:actionLayout="@layout/badge_navigation_colored" />
         <item
             android:id="@+id/nav_snake"
             android:title="SERPENTS"
+            android:icon="@drawable/ic_play_circle"
             app:actionLayout="@layout/badge_navigation_colored" />
         <item
             android:id="@+id/nav_arraigne"
             android:title="ARAIGNÉES"
+            android:icon="@drawable/ic_play_circle"
             app:actionLayout="@layout/badge_navigation_colored" />
 
         <item
             android:id="@+id/nav_croco"
             android:title="CROCODILES"
+            android:icon="@drawable/ic_play_circle"
             app:actionLayout="@layout/badge_navigation_colored" />
 
         <item
             android:id="@+id/nav_reptiles"
             android:title="REPTILES"
+            android:icon="@drawable/ic_play_circle"
             app:actionLayout="@layout/badge_navigation_colored" />
         <item
             android:id="@+id/nav_felin"
             android:title="FÉLINS"
+            android:icon="@drawable/ic_play_circle"
             app:actionLayout="@layout/badge_navigation_colored" />
         <item
             android:id="@+id/nav_requin"
             android:title="REQUINS"
+            android:icon="@drawable/ic_play_circle"
             app:actionLayout="@layout/badge_navigation_colored" />
 
         <item
             android:id="@+id/nav_chine"
-            android:title="Merveilles de la Chine"
+            android:title="MERVEILLES DE LA CHINE"
+            android:icon="@drawable/ic_play_circle"
             app:actionLayout="@layout/badge_navigation_colored" />
         <item
             android:id="@+id/nav_primate"
             android:title="PRIMATES"
+            android:icon="@drawable/ic_play_circle"
             app:actionLayout="@layout/badge_navigation_colored" />
         <item
             android:id="@+id/nav_elephant"
             android:title="ÉLÉPHANTS"
+            android:icon="@drawable/ic_play_circle"
             app:actionLayout="@layout/badge_navigation_colored" />
         <item
             android:id="@+id/nav_destinationWild"
             android:title="DESTINATION WILD"
+            android:icon="@drawable/ic_play_circle"
             app:actionLayout="@layout/badge_navigation_colored" />
     </group>
 
