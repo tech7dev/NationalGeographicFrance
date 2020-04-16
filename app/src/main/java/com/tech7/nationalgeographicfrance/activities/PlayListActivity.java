@@ -206,7 +206,7 @@ public class PlayListActivity extends AppCompatActivity {
                             title = title.replaceAll("&#39;","'");
                             description = description.replaceAll("&#39;","'");
                             publishedAt = publishedAt.replaceAll("T"," ");
-                            publishedAt = publishedAt.replaceAll(":00.000Z"," ");
+                            publishedAt = publishedAt.replaceAll(".000Z"," ");
 
                             youtubeObject.setTitle(title);
                             youtubeObject.setDescription(description);
