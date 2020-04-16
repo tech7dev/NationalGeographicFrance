@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group
+        android:id="@+id/grp_1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_okovango"
+            android:title="OKOVANGO"
+            app:actionLayout="@layout/badge_navigation_colored" />
+        <item
+            android:id="@+id/nav_snake"
+            android:title="SERPENTS"
+            app:actionLayout="@layout/badge_navigation_colored" />
+        <item
+            android:id="@+id/nav_arraigne"
+            android:title="ARAIGNÉES"
+            app:actionLayout="@layout/badge_navigation_colored" />
+
+        <item
+            android:id="@+id/nav_croco"
+            android:title="CROCODILES"
+            app:actionLayout="@layout/badge_navigation_colored" />
+
+        <item
+            android:id="@+id/nav_reptiles"
+            android:title="REPTILES"
+            app:actionLayout="@layout/badge_navigation_colored" />
+        <item
+            android:id="@+id/nav_felin"
+            android:title="FÉLINS"
+            app:actionLayout="@layout/badge_navigation_colored" />
+        <item
+            android:id="@+id/nav_requin"
+            android:title="REQUINS"
+            app:actionLayout="@layout/badge_navigation_colored" />
+
+        <item
+            android:id="@+id/nav_chine"
+            android:title="Merveilles de la Chine"
+            app:actionLayout="@layout/badge_navigation_colored" />
+        <item
+            android:id="@+id/nav_primate"
+            android:title="PRIMATES"
+            app:actionLayout="@layout/badge_navigation_colored" />
+        <item
+            android:id="@+id/nav_elephant"
+            android:title="ÉLÉPHANTS"
+            app:actionLayout="@layout/badge_navigation_colored" />
+        <item
+            android:id="@+id/nav_destinationWild"
+            android:title="DESTINATION WILD"
+            app:actionLayout="@layout/badge_navigation_colored" />
+    </group>
+
+    <group
+        android:id="@+id/grp_4"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_share"
+            android:title="Partager"
+            android:visible="true"/>
+
+        <item
+            android:id="@+id/nav_contact"
+            android:title="Contact"/>
+    </group>
+
+</menu>
