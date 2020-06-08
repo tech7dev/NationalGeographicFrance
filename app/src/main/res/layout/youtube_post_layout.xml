@@ -20,7 +20,6 @@
             android:layout_height="match_parent"
             android:gravity="center">
             <ImageView
-                android:id="@+id/imagePlay"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:foregroundGravity="center"
@@ -36,7 +35,7 @@
             android:layout_height="wrap_content"
             android:textSize="12dp"
             android:text="video Published at"
-            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
             android:singleLine="true"
             android:layout_margin="5dp"
             android:textColor="@android:color/white" />

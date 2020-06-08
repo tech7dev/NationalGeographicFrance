@@ -2,9 +2,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <group
-        android:id="@+id/grp_1"
-        android:checkableBehavior="single">
+    <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_okovango"
             android:title="OKOVANGO"
@@ -44,11 +42,6 @@
             app:actionLayout="@layout/badge_navigation_colored" />
 
         <item
-            android:id="@+id/nav_chine"
-            android:title="MERVEILLES DE LA CHINE"
-            android:icon="@drawable/ic_play_circle"
-            app:actionLayout="@layout/badge_navigation_colored" />
-        <item
             android:id="@+id/nav_primate"
             android:title="PRIMATES"
             android:icon="@drawable/ic_play_circle"
@@ -63,18 +56,21 @@
             android:title="DESTINATION WILD"
             android:icon="@drawable/ic_play_circle"
             app:actionLayout="@layout/badge_navigation_colored" />
+
+        <item
+            android:id="@+id/nav_chine"
+            android:title="CHINE"
+            android:icon="@drawable/ic_play_circle"
+            app:actionLayout="@layout/badge_navigation_colored" />
     </group>
 
-    <group
-        android:id="@+id/grp_4"
-        android:checkableBehavior="single">
+    <group android:checkableBehavior="single">
 
         <item
             android:id="@+id/nav_share"
             android:title="Partager"
             android:icon="@drawable/share"
-            android:iconTint="#fafafa"
-            android:visible="true"/>
+            android:visible="false"/>
 
         <item
             android:id="@+id/nav_contact"

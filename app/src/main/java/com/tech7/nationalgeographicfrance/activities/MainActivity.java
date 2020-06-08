@@ -22,6 +22,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonArrayRequest;
+import com.android.volley.toolbox.Volley;
 import com.google.android.material.navigation.NavigationView;
 import com.tech7.nationalgeographicfrance.R;
 import com.tech7.nationalgeographicfrance.adapter.VideoPostAdapter;
@@ -55,18 +61,18 @@ public class MainActivity extends AppCompatActivity {
 
     private static String GOOGLE_YOUTUBE_API_KEY = "AIzaSyDyW7B--90khlyosHdfz9U6bF9giXn2SY8";//here you should use your api key for testing purpose you can use this api also
     private static String CHANNEL_ID = "UCT60XBtfRQzf5NKFGDNbfCw"; //here you should use your channel id for testing purpose you can use this api also
-    private static String CHANNEL_GET_URL = "https://www.googleapis.com/youtube/v3/search?part=snippet&order=date&channelId=" + CHANNEL_ID + "&maxResults=30&key=" + GOOGLE_YOUTUBE_API_KEY + "";
+    private static String CHANNEL_GET_URL = "https://www.googleapis.com/youtube/v3/search?part=snippet&order=date&channelId=" + CHANNEL_ID + "&maxResults=20&key=" + GOOGLE_YOUTUBE_API_KEY + "";
 
     private RecyclerView rcvChannelVideos = null;
     private VideoPostAdapter adapter = null;
     private ArrayList<YoutubeDataModel> mListData = new ArrayList<>();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //check network
         checkNetworkConnection();
     }
 
@@ -80,6 +86,7 @@ public class MainActivity extends AppCompatActivity {
             mobileConnected = networkInfo.getType() == ConnectivityManager.TYPE_MOBILE;
 
             if (wifiConnected || mobileConnected) {
+
                 initToolbar();
                 initNavigationMenu();
 
@@ -214,7 +221,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void initToolbar() {
         //setting title bar
-        titleBar = "Nat Geo France";
+        titleBar = "Nat Zoo Geo";
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark));
         setSupportActionBar(toolbar);

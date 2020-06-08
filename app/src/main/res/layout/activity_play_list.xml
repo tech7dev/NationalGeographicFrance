@@ -42,7 +42,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/colorDarkOverlay"
-        android:elevation="2dp"
         android:gravity="center"
         android:visibility="gone"
         app:layout_constraintTop_toTopOf="parent"
@@ -53,9 +52,7 @@
         <ProgressBar
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
             android:background="@drawable/rounded_corners"
-            android:elevation="10dp"
             android:indeterminate="true" />
     </RelativeLayout>
 
@@ -64,7 +61,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/colorPrimaryDark"
-        android:elevation="2dp"
         android:gravity="center"
         android:orientation="vertical"
         android:visibility="gone"
@@ -74,13 +70,11 @@
         app:layout_constraintRight_toRightOf="parent">
 
         <ImageView
-            android:id="@+id/imgBadNetwork"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/ic_mood_bad" />
 
         <TextView
-            android:id="@+id/txtBadNetwork"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Problème de Connection Internet"
